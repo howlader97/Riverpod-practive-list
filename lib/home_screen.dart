@@ -61,7 +61,13 @@ class HomeScreen extends ConsumerWidget {
             ),
             Consumer(builder: (context,ref,child){
               final search=ref.watch(searchProvider);
-              return Text(search);
+              return Text(search.search);
+            }),
+            Consumer(builder: (context,ref,child){
+              final search=ref.watch(searchProvider);
+              return Switch(value: search.isChange, onChanged: (value){
+                ref.read(searchProvider.notifier).onChange(value);
+              });
             })
 
           ],
