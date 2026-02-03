@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_learn_list/favourite_app/favourite_app.dart';
 import 'package:riverpod_learn_list/todo_app/todo_app.dart';
 
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ProviderScope(
       child: MaterialApp(
-        home: TodoApp(),
+        home: FavouriteApp(),
       ),
     );
   }
