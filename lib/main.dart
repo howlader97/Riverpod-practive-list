@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_learn_list/home_screen.dart';
+import 'package:riverpod_learn_list/todo_app/todo_app.dart';
 
 
 void main(){
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ProviderScope(
       child: MaterialApp(
-        home: HomeScreen(),
+        home: TodoApp(),
       ),
     );
   }
